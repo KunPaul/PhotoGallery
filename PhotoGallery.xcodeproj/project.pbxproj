@@ -10,6 +10,9 @@
 		2E84A7972889551A009156F6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84A7962889551A009156F6 /* TabBarController.swift */; };
 		2E84A79B288958AC009156F6 /* UIcolor + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84A79A288958AC009156F6 /* UIcolor + extension.swift */; };
 		2E84A79E28895955009156F6 /* Resouces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84A79D28895955009156F6 /* Resouces.swift */; };
+		2E84A7A0288AAD32009156F6 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84A79F288AAD32009156F6 /* NavBarController.swift */; };
+		2E84A7A4288AB105009156F6 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84A7A3288AB105009156F6 /* BaseController.swift */; };
+		2E84A7A6288AB349009156F6 /* UIView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84A7A5288AB349009156F6 /* UIView + Ext.swift */; };
 		2EF9F0A728869AFF001DBC0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF9F0A628869AFF001DBC0C /* AppDelegate.swift */; };
 		2EF9F0A928869AFF001DBC0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF9F0A828869AFF001DBC0C /* SceneDelegate.swift */; };
 		2EF9F0AB28869AFF001DBC0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF9F0AA28869AFF001DBC0C /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 		2E84A7962889551A009156F6 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		2E84A79A288958AC009156F6 /* UIcolor + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIcolor + extension.swift"; sourceTree = "<group>"; };
 		2E84A79D28895955009156F6 /* Resouces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resouces.swift; sourceTree = "<group>"; };
+		2E84A79F288AAD32009156F6 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		2E84A7A3288AB105009156F6 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		2E84A7A5288AB349009156F6 /* UIView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Ext.swift"; sourceTree = "<group>"; };
 		2EF9F0A328869AFF001DBC0C /* PhotoGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF9F0A628869AFF001DBC0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EF9F0A828869AFF001DBC0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,8 +79,36 @@
 			isa = PBXGroup;
 			children = (
 				2E84A79A288958AC009156F6 /* UIcolor + extension.swift */,
+				2E84A7A5288AB349009156F6 /* UIView + Ext.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		2E84A7A1288AB0C8009156F6 /* Contollers */ = {
+			isa = PBXGroup;
+			children = (
+				2E84A7A8288AB4F6009156F6 /* Album */,
+				2E84A7A7288AB4BE009156F6 /* Base */,
+			);
+			path = Contollers;
+			sourceTree = "<group>";
+		};
+		2E84A7A7288AB4BE009156F6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2E84A7962889551A009156F6 /* TabBarController.swift */,
+				2E84A79F288AAD32009156F6 /* NavBarController.swift */,
+				2E84A7A3288AB105009156F6 /* BaseController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2E84A7A8288AB4F6009156F6 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				2EF9F0AA28869AFF001DBC0C /* ViewController.swift */,
+			);
+			path = Album;
 			sourceTree = "<group>";
 		};
 		2EF9F09A28869AFF001DBC0C = {
@@ -98,8 +132,7 @@
 			children = (
 				2E84A7992889588A009156F6 /* Helpers */,
 				2E84A79528895333009156F6 /* Appliation */,
-				2EF9F0AA28869AFF001DBC0C /* ViewController.swift */,
-				2E84A7962889551A009156F6 /* TabBarController.swift */,
+				2E84A7A1288AB0C8009156F6 /* Contollers */,
 				2E84A7942889530E009156F6 /* SupportingFiles */,
 			);
 			path = PhotoGallery;
@@ -177,9 +210,12 @@
 			files = (
 				2EF9F0AB28869AFF001DBC0C /* ViewController.swift in Sources */,
 				2E84A7972889551A009156F6 /* TabBarController.swift in Sources */,
+				2E84A7A6288AB349009156F6 /* UIView + Ext.swift in Sources */,
 				2EF9F0A728869AFF001DBC0C /* AppDelegate.swift in Sources */,
+				2E84A7A0288AAD32009156F6 /* NavBarController.swift in Sources */,
 				2EF9F0A928869AFF001DBC0C /* SceneDelegate.swift in Sources */,
 				2E84A79E28895955009156F6 /* Resouces.swift in Sources */,
+				2E84A7A4288AB105009156F6 /* BaseController.swift in Sources */,
 				2E84A79B288958AC009156F6 /* UIcolor + extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

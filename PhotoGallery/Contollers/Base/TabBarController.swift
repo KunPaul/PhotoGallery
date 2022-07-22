@@ -36,13 +36,13 @@ final class TabBarController: UITabBarController {
         
         let mediaController = UIViewController()
         let forMeController = UIViewController()
-        let albumController = UIViewController()
+        let albumController = AlbumController()
         let searchController = UIViewController()
         
-        let mediaNavigation = UINavigationController(rootViewController: mediaController )
-        let forMeNavigation = UINavigationController(rootViewController: forMeController )
-        let albumNavigation = UINavigationController(rootViewController: albumController )
-        let searchNavigation = UINavigationController(rootViewController: searchController )
+        let mediaNavigation = NavBarController(rootViewController: mediaController )
+        let forMeNavigation = NavBarController(rootViewController: forMeController )
+        let albumNavigation = NavBarController(rootViewController: albumController )
+        let searchNavigation = NavBarController(rootViewController: searchController )
         
         mediaNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.tabBar.media,
                                                   image: Resources.Images.media,

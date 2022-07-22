@@ -11,8 +11,9 @@ enum Resources {
     enum Colors {
         static var active = UIColor(hexString: "#437BFE")
         static var inactive = UIColor(hexString: "#929DA5")
-        
+        static var titleblack = UIColor(hexString: "#000000")
         static var separator = UIColor(hexString: "#E8ECEF")
+        static var background = UIColor(hexString: "#ffffff")
     }
     
     enum Strings {
@@ -30,4 +31,9 @@ enum Resources {
         static var search = UIImage(systemName: "magnifyingglass")
     }
     
+    enum Fonts {
+        static func helvelticaRegular(with size: CGFloat) -> UIFont {
+            UIFont(name: "Helvetica", size: size) ?? UIFont()
+        }
+    }
 }
